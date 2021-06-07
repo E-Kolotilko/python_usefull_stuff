@@ -17,7 +17,7 @@ def routine(directory):
     with Image.open(infile) as im:
         #here you can do A LOT of things with it. Some objects changes in memory. RTFM
         resized = im.resize(size)#can also choose resample algorithm, and area box
-        resized.save(filepath_no_ext + ".my_save", "JPEG")
+        resized.save(filepath_no_ext + ".my_save.jpg", "JPEG")
         if (first):
             first = False
             #show does not block. With lots of files it may be rather...painfull...
